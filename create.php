@@ -16,7 +16,7 @@ include ('db.php');
         <form action="create.php" method="POST">
             <div class="item single">
                 <div class="text">
-                    <textarea placeholder="Type something here..." name="text"></textarea>
+                    <textarea placeholder="Type something here..." name="text" required></textarea>
                     <?php 
                     if (isset($_POST['text'])) {
                         $text=$_POST['text'];
