@@ -9,8 +9,8 @@ include ('db.php');
 <body>
 <div class="container">
     <div class="header">
-        <h1>Todo list</h1>
-        <a href="create.php">Add new task</a>
+        <h1>Add new task</h1>
+        <a href="index.php">View all tasks</a>
     </div>
     <div class="content">
         <form action="create.php" method="POST">
@@ -32,8 +32,8 @@ include ('db.php');
                     ?>
                 </div>
                 <div class="actions">
-                    <button href="create.php" class="button" type="submit"><i class="icon icon-icon-check"></i>Create task</a>
-                    <button href="index.php" class="button white"><i class="icon icon-icon-cancel"></i>Cancel</a>
+                    <button class="button" type="submit"><i class="icon icon-icon-check"></i>Create task</button>
+                    <a href="index.php" class="button white"><i class="icon icon-icon-cancel"></i>Cancel</a>
                 </div>
             </div>
         </form>
