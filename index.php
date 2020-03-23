@@ -20,7 +20,7 @@ $rows = $db->query($sql);
     <div class="item">
       <div class="text"><?php echo $row['text']; ?></div>
       <div class="actions">
-      <a href="edit.php?id=<?php echo $row['id']; ?>" class="icon"><i class="icon icon-icon-edit"></i></a>
+      <a href="update.php?id=<?php echo $row['id']; ?>" class="icon"><i class="icon icon-icon-edit"></i></a>
       <a href="delete.php?id=<?php echo $row['id']; ?>" class="icon"><i class="icon icon-icon-trash"></i></a>
       </div>
     </div>
