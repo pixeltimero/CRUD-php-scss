@@ -27,9 +27,9 @@ body{
   }
   .content{
     margin-top: 24px;
-    // overflow-y: scroll;
-    height: 400px;
-    // padding-right: 24px;
+    overflow-y: auto;
+    height: 300px;
+    padding-right: 24px;
     &:empty{
       display: none;
     }

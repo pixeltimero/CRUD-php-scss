@@ -41,7 +41,9 @@ body {
 
 .container .content {
   margin-top: 24px;
-  height: 400px;
+  overflow-y: auto;
+  height: 300px;
+  padding-right: 24px;
 }
 
 .container .content:empty {
