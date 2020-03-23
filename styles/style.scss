@@ -1,0 +1,119 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('../font/fontello-aecc9a06/css/fontello.css');
+
+body{
+  background: linear-gradient(235deg, #4E5369 0%, #36384F 100%);
+  font-family: 'Roboto', sans-serif;
+}
+.container{
+  background: #fff;
+  width: 700px;
+  margin: 100px auto 0;
+  border-radius: 4px;
+  padding: 24px;
+  .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h1{
+      flex-grow: 1 auto;
+      font-weight: 700;
+      margin: 0;
+    }
+    a{
+      display: flex;
+    }
+  }
+  .content{
+    margin-top: 24px;
+    overflow-y: scroll;
+    height: 400px;
+    padding-right: 24px;
+    &:empty{
+      display: none;
+    }
+    .item{
+      border: 1px solid #EAEAEA;
+      padding: 12px;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      align-content: space-between;
+      margin-bottom: 8px;
+      &:last-child{
+          margin: 0;
+      }
+      .text{
+        flex-grow: 1 auto;
+        word-break: break-all;
+        padding-right: 24px;
+        width: -webkit-fill-available;
+      }
+      .actions{
+          background: red;
+          display: flex;
+          a{
+            margin-right: 8px;
+            padding: 4px;
+            display: inline-flex;
+            border-radius: 0;
+            i{
+              font-size: 16px;
+            }
+            &:last-child{
+              margin: 0;
+            }
+          }
+      }
+      &:hover{
+          border-color: #36384F;
+      }
+    }
+  }
+}
+
+a{
+  padding: 8px 24px;
+  text-decoration: none;
+  background: #36384F;
+  outline: none;
+  border: 1px solid #36384F;
+  color: #fff;
+  border-radius: 4px;
+  &.white{
+    color: #36384F;
+    background: #fff;
+  }
+  &.icon{
+    border:none;
+    background: transparent;
+    color: #EAEAEA;
+    &:hover{
+      color: #4E5369;
+    }
+  }
+}
+
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #BEBEBE;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #36384F;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #36384F;
+}

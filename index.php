@@ -1,3 +1,8 @@
+<?php 
+include ('db.php'); 
+$sql = "select * from tasks";
+$rows = $db->query($sql);
+?>
 <html>
 <head>
 <title>PHP Crud</title>
@@ -7,16 +12,19 @@
 <div class="container">
   <div class="header">
     <h1>Todo list</h1>
-    <a href="#">Add new task</a>
+    <a href="create.php">Add new task</a>
   </div>
   <div class="content">
+      <?php while($row = $rows->fetch_assoc()): ?>
+
     <div class="item">
-      <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, libero nemo. Praesentium dolor in, optio iste accusantium aliquid cumque harum quod minima qui atque! Perferendis iusto nulla odit cupiditate natus!</div>
+      <div class="text"><?php echo $row['text']; ?></div>
       <div class="actions">
-        <a href="#" class="icon"><i class="icon"></i></a>
-        <a href="#" class="icon"><i class="icon"></i></a>
+      <a href="update.php?id=<?php echo $row['id']; ?>" class="icon"><i class="icon icon-icon-edit"></i></a>
+      <a href="delete.php?id=<?php echo $row['id']; ?>" class="icon"><i class="icon icon-icon-trash"></i></a>
       </div>
     </div>
+      <?php endwhile; ?>
   </div>
 </div>
 </body>

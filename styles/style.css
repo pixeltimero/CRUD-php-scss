@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("../font/fontello-aecc9a06/css/fontello.css");
+body {
+  background: linear-gradient(235deg, #4E5369 0%, #36384F 100%);
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  background: #fff;
+  width: 700px;
+  margin: 100px auto 0;
+  border-radius: 4px;
+  padding: 24px;
+}
+
+.container .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .header h1 {
+  -webkit-box-flex: 1 auto;
+      -ms-flex-positive: 1 auto;
+          flex-grow: 1 auto;
+  font-weight: 700;
+  margin: 0;
+}
+
+.container .header a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .content {
+  margin-top: 24px;
+  overflow-y: scroll;
+  height: 400px;
+  padding-right: 24px;
+}
+
+.container .content:empty {
+  display: none;
+}
+
+.container .content .item {
+  border: 1px solid #EAEAEA;
+  padding: 12px;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  margin-bottom: 8px;
+}
+
+.container .content .item:last-child {
+  margin: 0;
+}
+
+.container .content .item .text {
+  -webkit-box-flex: 1 auto;
+      -ms-flex-positive: 1 auto;
+          flex-grow: 1 auto;
+  word-break: break-all;
+  padding-right: 24px;
+  width: -webkit-fill-available;
+}
+
+.container .content .item .actions {
+  background: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .content .item .actions a {
+  margin-right: 8px;
+  padding: 4px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-radius: 0;
+}
+
+.container .content .item .actions a i {
+  font-size: 16px;
+}
+
+.container .content .item .actions a:last-child {
+  margin: 0;
+}
+
+.container .content .item:hover {
+  border-color: #36384F;
+}
+
+a {
+  padding: 8px 24px;
+  text-decoration: none;
+  background: #36384F;
+  outline: none;
+  border: 1px solid #36384F;
+  color: #fff;
+  border-radius: 4px;
+}
+
+a.white {
+  color: #36384F;
+  background: #fff;
+}
+
+a.icon {
+  border: none;
+  background: transparent;
+  color: #EAEAEA;
+}
+
+a.icon:hover {
+  color: #4E5369;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #BEBEBE;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #36384F;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #36384F;
+}
+/*# sourceMappingURL=style.css.map */
