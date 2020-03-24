@@ -129,6 +129,10 @@ body {
   border-color: #36384F;
 }
 
+.container .content .item.single .text input {
+  display: none;
+}
+
 .container .content .item.single .actions {
   display: -webkit-box;
   display: -ms-flexbox;
