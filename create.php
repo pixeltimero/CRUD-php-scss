@@ -26,7 +26,7 @@ include ('db.php');
                             header('location:index.php');
                         }
                         else{
-                            echo "nasol";
+                            echo "error";
                         }
                     }
                     ?>
